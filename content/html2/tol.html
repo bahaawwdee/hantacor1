@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أدوات الاختراق - الحنتكور الأسود</title>
+  <meta name="description" content="صفحة تعرض أدوات الاختراق بشكل احترافي مع تنسيق متجاوب، بدون صور.">
+  <!-- استدعاء خط من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2C3E50;      /* لون أساسي داكن */
+      --secondary-color: #2980B9;    /* لون ثانوي مريح */
+      --accent-color: #E74C3C;       /* لون للتفاعل */
+      --background-color: #ECF0F1;   /* خلفية فاتحة */
+      /* زيادة شفافية خلفية البطاقة لتحسين وضوح النص */
+      --card-bg: rgba(255, 255, 255, 0.7);
+      --card-shadow: rgba(0, 0, 0, 0.2);
+      --transition-speed: 0.3s;
+    }
+    /* إعادة تعيين الأنماط الافتراضية */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: url('../img/backe.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--primary-color);
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .tools-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .tool-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(5px);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px var(--card-shadow);
+      padding: 20px;
+      transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+      text-align: center;
+    }
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px var(--card-shadow);
+    }
+    .tool-title {
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      letter-spacing: 0.5px;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
+    }
+    .tool-description {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 15px;
+      min-height: 50px;
+      text-align: justify;
+      line-height: 1.8;
+    }
+    .tool-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background: var(--secondary-color);
+      color: #fff;
+      border-radius: 50px;
+      transition: background var(--transition-speed);
+      text-decoration: none;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .tool-btn:hover {
+      background: var(--accent-color);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: 10px;
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+    /* تجاوب إضافي */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      .tool-card { padding: 15px; }
+      .tool-title { font-size: 1.5rem; }
+      .tool-description { font-size: 1rem; }
+      .tool-btn { font-size: 0.9rem; padding: 8px 16px; }
+    }
+    /* توجيه النصوص */
+    h2, p {
+      direction: rtl;
+      text-align: center;
+    }
+  </style>
+  
+  
+</head>
+<body>
+  <header>
+    <h1>أدوات الاختراق</h1>
+  </header>
+  <section class="tools-container">
+    <!-- الأداة 1 -->
+    <div class="tool-card">
+      <h2 class="tool-title">OSIF</h2>
+      <p class="tool-description">أداة استخراج معلومات فيسبوك المتاحة بسهولة.</p>
+      <a href="../html2/tools/tool1.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 2 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Root</h2>
+      <p class="tool-description">إعطاء تيرمكس صلاحيات الروت دون الحاجة لروت حقيقي.</p>
+      <a href="../html2/tools/tool2.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 3 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Report</h2>
+      <p class="tool-description">هجوم على حساب فيسبوك وإغلاقه عبر تقنيات الإبلاغ المكثفة.</p>
+      <a href="../html2/tools/tool3.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 4 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Calling</h2>
+      <p class="tool-description">أداة لإنشاء اتصالات وهمية لجميع دول العالم.</p>
+      <a href="../html2/tools/tool4.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 5 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Nmap</h2>
+      <p class="tool-description">فحص الشبكات واكتشاف الأجهزة باستخدام Nmap.</p>
+      <a href="../html2/tools/tool5.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 6 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux SQLmap</h2>
+      <p class="tool-description">أداة لاختراق قواعد البيانات واكتشاف الثغرات.</p>
+      <a href="../html2/tools/tool6.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 7 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Hydra</h2>
+      <p class="tool-description">اختراق كلمات المرور باستخدام القوة الغاشمة.</p>
+      <a href="../html2/tools/tool7.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 8 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Metasploit</h2>
+      <p class="tool-description">الميتاسبلويت، أداة الاختراق المعروفة عالميًا.</p>
+      <a href="../html2/tools/tool8.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 9 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Nikto</h2>
+      <p class="tool-description">فحص التطبيقات والخدمات على خوادم الويب باستخدام Nikto.</p>
+      <a href="../html2/tools/tool9.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 10 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Aircrack-ng</h2>
+      <p class="tool-description">أداة قوية لاختراق شبكات الواي فاي.</p>
+      <a href="../html2/tools/tool10.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 11 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Wifite</h2>
+      <p class="tool-description">أداة مميزة لاختراق شبكات الواي فاي بسهولة.</p>
+      <a href="../html2/tools/tool11.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 12 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux DNSRecon</h2>
+      <p class="tool-description">فحص وتحليل سجلات DNS باستخدام DNSRecon.</p>
+      <a href="../html2/tools/tool12.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 13 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Recon-ng</h2>
+      <p class="tool-description">جمع المعلومات عن الأهداف باستخدام Recon-ng.</p>
+      <a href="../html2/tools/tool13.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 14 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux TheHarvester</h2>
+      <p class="tool-description">جمع المعلومات بدقة عن الأهداف باستخدام TheHarvester.</p>
+      <a href="../html2/tools/tool14.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 15 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux OSIF</h2>
+      <p class="tool-description">أداة لجمع معلومات فيسبوك عبر استغلال الثغرات.</p>
+      <a href="../html2/tools/tool15.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 16 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Driftnet</h2>
+      <p class="tool-description">أداة لاعتراض وعرض الصور من حركة المرور الشبكية.</p>
+      <a href="../html2/tools/tool16.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 17 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Torshammer</h2>
+      <p class="tool-description">هجوم DDoS باستخدام طلبات HTTP عبر شبكة Tor.</p>
+      <a href="../html2/tools/tool17.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 18 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux WPSploit</h2>
+      <p class="tool-description">اختبار اختراق نقاط الوصول باستخدام تقنية WPS.</p>
+      <a href="../html2/tools/tool18.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 19 -->
+    <div class="tool-card">
+      <h2 class="tool-title">Termux Biscs</h2>
+      <p class="tool-description">تثبيت جميع أساسيات Termux بضغط زر واحدة.</p>
+      <a href="../html2/tools/tool19.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+    <!-- الأداة 20 -->
+    <div class="tool-card">
+      <h2 class="tool-title">AI_Face Hacking</h2>
+      <p class="tool-description">اختراق فيسبوك باستخدام تقنيات الذكاء الاصطناعي المتقدمة.</p>
+      <a href="../html2/tools/tool20.html" class="tool-btn">اذهب للأداة</a>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
