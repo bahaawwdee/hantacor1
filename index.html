@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الحنتكور الأسود</title>
+  <!-- خط "Cairo" من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    /* إعادة تعيين الأنماط */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-image: url('content/img/backe.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+
+      color: #fff;
+      overflow-x: hidden;
+    }
+    /* قسم الهيرو بخلفية جذابة */
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?cybersecurity') no-repeat center center/cover;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* تأثير التعتيم على الخلفية */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+    /* المحتوى الرئيسي */
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 2rem;
+      max-width: 800px;
+    }
+    .content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+    .content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    }
+    /* شريط التنقل */
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .nav a {
+      padding: 0.8rem 1.5rem;
+      background: #ff4500;
+      border-radius: 50px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .nav a:hover {
+      background: #e03e00;
+      transform: translateY(-3px);
+    }
+    /* التكيف مع الشاشات الصغيرة */
+    @media (max-width: 768px) {
+      .content h1 {
+        font-size: 2.5rem;
+      }
+      .content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>الحنتكور الأسود</h1>
+      <p>
+        منصة متخصصة في الأمن السيبراني والتعلم التقني. نقدم دورات احترافية في الاختراق الأخلاقي والتداول والمزيد، مع خدمات وأدوات تقييم أمان الأنظمة بأقل التكاليف.
+      </p>
+      <nav class="nav">
+        <a href="content/html2/cor.html">الكورسات</a>
+        <a href="content/html2/khdmat.html">خدمات اختراق</a>
+        <a href="content/html2/tol.html">أدوات اختراق</a>
+        <a href="content/html2/abut.html">من نحن</a>
+        <a href="content/html2/contact.html">اتصل بنا</a>
+        <a href="content/html2/cow.html">بيانات مسربة</a>
+
+      </nav>
+    </div>
+  </section>
+</body>
+</html>
